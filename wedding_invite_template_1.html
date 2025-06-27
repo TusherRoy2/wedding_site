@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Invitation - Elegant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #eec9d2;
+      --accent-color: #d6a4a4;
+      --text-color: #333;
+      --bg-color: #fffaf9;
+      --font-primary: 'Playfair Display', serif;
+      --font-secondary: 'Lato', sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-secondary);
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      scroll-behavior: smooth;
+    }
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+      background: url('../wallpaper.jpg') center/cover no-repeat;
+    }
+    header h1 {
+      font-family: var(--font-primary);
+      font-size: 3rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    section.photos {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    section.photos img {
+      width: 250px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    section.photos img:hover {
+      transform: scale(1.05);
+    }
+    .our-story, .event-details, .faq, .schedule, .venue, .how-we-met {
+      background: #fff;
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin-top: 20px;
+    }
+    .our-story h2, .event-details h2, .faq h2, .schedule h2, .venue h2, .how-we-met h2, .countdown h2, form h2 {
+      font-family: var(--font-primary);
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+      color: var(--accent-color);
+    }
+    .our-story p, .event-details ul li, .faq p, .schedule ul li, .venue p, .how-we-met p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    .event-details ul, .schedule ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .event-details li, .schedule li {
+      margin-bottom: 10px;
+    }
+    .venue img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    section.countdown {
+      text-align: center;
+    }
+    #countdown {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    form {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      margin-top: 20px;
+    }
+    form label, form select, form textarea, form button {
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+      font-size: 1rem;
+    }
+    form textarea, form select {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    form button {
+      background-color: var(--accent-color);
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .message {
+      text-align: center;
+      font-weight: bold;
+      color: green;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 30px 10px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Emma & Liam</h1>
+    <p>Join us in celebrating our love</p>
+  </header>
+
+  <section class="photos">
+    <img src="../photo1.jpg" alt="Wedding Photo 1">
+    <img src="../photo2.jpg" alt="Wedding Photo 2">
+    <img src="../photo3.jpg" alt="Wedding Photo 3">
+  </section>
+
+  <section class="how-we-met">
+    <h2>How We Met</h2>
+    <p>It started with a chance meeting at a book café. From shy glances to deep conversations, our journey began with laughter and friendship—and turned into love.</p>
+  </section>
+
+  <section class="our-story">
+    <h2>Our Story</h2>
+    <p>It all began with a smile in 2019. From spontaneous adventures to quiet moments together, every chapter brought us closer. Now, we’re excited to start the next one—together, forever.</p>
+  </section>
+
+  <section class="event-details">
+    <h2>Wedding Details</h2>
+    <ul>
+      <li><strong>Date:</strong> December 25, 2025</li>
+      <li><strong>Time:</strong> 3:00 PM</li>
+      <li><strong>Venue:</strong> Rose Garden, Dhaka</li>
+      <li><strong>Dress Code:</strong> Formal / Elegant</li>
+    </ul>
+  </section>
+
+  <section class="venue">
+    <h2>Wedding Venue</h2>
+    <img src="../venue.jpg" alt="Venue Image">
+    <p>The ceremony will be held in the lush garden of Rose Garden Palace, an iconic heritage site in Dhaka filled with flowers, fountains, and timeless charm.</p>
+  </section>
+
+  <section class="schedule">
+    <h2>Schedule</h2>
+    <ul>
+      <li><strong>2:30 PM:</strong> Guest arrival & welcome drinks</li>
+      <li><strong>3:00 PM:</strong> Wedding Ceremony</li>
+      <li><strong>4:00 PM:</strong> Couple Photos & Reception Snacks</li>
+      <li><strong>6:00 PM:</strong> Dinner & Speeches</li>
+      <li><strong>8:00 PM:</strong> Dancing & Celebration</li>
+    </ul>
+  </section>
+
+  <section class="faq">
+    <h2>Wedding FAQ</h2>
+    <p><strong>Q:</strong> Can I bring a guest?<br><strong>A:</strong> Yes! We’d love to celebrate with your loved ones—please mention it in your RSVP.</p>
+    <p><strong>Q:</strong> Is parking available?<br><strong>A:</strong> Yes, complimentary valet parking is provided at the venue entrance.</p>
+    <p><strong>Q:</strong> What is the dress code?<br><strong>A:</strong> Formal. Think garden-party elegance!</p>
+  </section>
+
+  <section class="countdown">
+    <h2>Countdown to Our Big Day</h2>
+    <div id="countdown">Loading...</div>
+  </section>
+
+  <form id="rsvp-form">
+    <h2>RSVP</h2>
+    <label for="attending">Will you attend?</label>
+    <select id="attending" name="attending" required>
+      <option value="">-- Please select --</option>
+      <option value="yes">Yes, I’ll be there!</option>
+      <option value="no">Sorry, can’t make it.</option>
+    </select>
+
+    <label for="message">Leave us a message</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Send RSVP</button>
+    <div class="message" id="confirmation" style="display:none;">Thank you for your RSVP!</div>
+  </form>
+
+  <footer>
+    <p>With love, Emma & Liam — 2025</p>
+  </footer>
+
+  <script>
+    const countdown = document.getElementById('countdown');
+    const weddingDate = new Date('2025-12-25T15:00:00');
+    function updateCountdown() {
+      const now = new Date();
+      const diff = weddingDate - now;
+      if (diff <= 0) {
+        countdown.textContent = "Today is the day! 💍";
+        return;
+      }
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / (1000 * 60)) % 60);
+      const seconds = Math.floor((diff / 1000) % 60);
+      countdown.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    const form = document.getElementById('rsvp-form');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const attending = form.attending.value;
+      const message = form.message.value.trim();
+      if (!attending || !message) {
+        alert('Please complete the form.');
+        return;
+      }
+      setTimeout(() => {
+        document.getElementById('confirmation').style.display = 'block';
+        form.reset();
+      }, 500);
+    });
+  </script>
+</body>
+</html>
